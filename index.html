@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+	
+
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8DK0SWS02R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8DK0SWS02R');
+</script>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/html5reset-copy.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ab3b9ee9fc.js" crossorigin="anonymous"></script>
+
+	
+	<title>About</title>
+</head>
+
+<body>
+    <header>
+            <a class = "skip" href="#main">Skip to Main Content</a>
+            <nav class = 'nav'>
+                <input type = 'checkbox' id='nav__checkbox' class = "nav__checkbox">
+                <label  for = 'nav__checkbox' class='nav__toggle'>
+                    <i  class="fa-solid fa-bars"></i>
+                    <i  class="fa-solid fa-xmark"></i>
+                </label>
+                    <ul class = 'nav__menu'>
+                        <li class="active"><a href = "index.html">About Me</a></li>
+                        <li><a href = "breakfast.html"> Breakfast</a></li>
+                        <li><a href = "recepies.html">My Recipes</a></li>
+                        <li><a href = "meals.html"> Meals</a></li>
+                    <li><a href = "dessert.html"> Desserts</a></li>
+                    </ul>
+            </nav>
+
+    </header>
+
+
+<main>
+    <div class = homescreen>
+        <h1 class = "bigger" id = "main"> Katie's Kitchen</h1>
+        <p class = main_blurb>
+            Hi! My name is Katie Valus. Welcome to my food blog! I am excited to share with you my favorite recepies and more about my lifestyle! 
+            I love delicious foods that are high in protein and make my body feel good, full, and fueld. Many of my recepies are gluten and dairy free.
+            I hope you enjoy them as much as I do!
+        </p>
+    </div>
+
+    <div class = contactme>
+        <h2 class = 'getInTouch'> Want to Get In Touch?</h2>
+        <p class = 'formBlurb'>Leave a message below with recipe recommendations, business inquiries,
+            or just to say hi!
+        </p>
+    <form
+        action="https://formspree.io/f/xqknlqqn"
+        method="POST">
+        <label for = 'email'>Your email:</label>
+        <input id = "email" type="email" name="email" placeholder="email@email.com">
+  
+        <label for="msg">Leave A Message</label>
+        <input id = "msg" type="text" name="msg" placeholder="Enter your message" >
+
+        <label for="name">Name</label>
+        <input id = "name" type="text" name="name" placeholder="Enter your name here" >
+        <div class = 'radioRuttons'>
+        <input type = 'radio' id = 'messagerecipie' name = 'type'>
+        <label for = "messagerecipie">Recepie</label>
+
+        <input type = 'radio' id = 'business' name = 'type'>
+        <label for = "business">Business</label>
+
+        <input type = 'radio' id = 'Other' name = 'type'>
+        <label for = "Other">Other</label>
+
+        </div>
+        <button type="submit">Send</button>
+  
+    </form>
+    </div>
+
+
+    <div class = "grid_container" >
+        <img src = "images/brownies.jpg" alt = "lack bean brownies" />
+        <img src = "images/chicago-salad.jpg" alt = "green salad with chicken" />
+        <img src = "images/psmoothie.jpg" alt = "purple smoothie" />
+        <img src = "images/whitebean.jpg" alt = "white bean dip" />
+        <img src = "images/gsmoothie.jpg" alt = "green smoothie" />
+        <img src = "images/omlet.jpg" alt = "omlet with veggies" />
+        <img src = "images/cod.jpg" alt = "cod prepared with veggies" />
+        <img src = "images/cake.jpg" alt = "chocolate cake" />
+        <img src = "images/strawberries.jpg" alt = "chocolate covered strawberries" />
+    </div>
+
+
+    
+
+<!--
+
+    <div class = contact>
+        <form>
+            <fieldset>
+              <legend>Contact Me!</legend>
+          
+              <label for="name_id">Your Name</label>
+              <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+          
+              <label for="email_id">Your Email</label>
+              <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+          
+              <label for="phone_id">Your Phone Number</label>
+              <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              
+          
+          
+              <label for="msg">Leave A Message</label>
+              <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+          
+              <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+              <label for ="cBox">Remember me</label>
+          
+              <input class = contactme type="submit" value = "Contact Me">
+            </fieldset>
+           </form>
+    </div> -->
+</main>
+	<footer>
+		<p>Katie Valus &copy; 2022</p>
+        
+	</footer>
+</body>
+</html>
