@@ -1,26 +1,25 @@
 body{
     background-color: white;
-    font-family: 'preconnect';
+    font-family: 'Montserrat';
 }
 h2, p, li, label, input{
-    font-family: "Work Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    /*font-family: "Work Sans", "Segoe UI", "Helvetica Neue", sans-serif;*/
+    font-family: "Montserrat";
 
 }
 #main,footer,header{
     padding: 10px;
 }
+
 h1{
-    font-size: 35px;
-    padding: 5px;
-    padding-top: 50px;
-    margin: 10px;
     font-family: 'montserrat';
     font-weight: bolder;
     text-align: center;
 }
+
 .main_blurb{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     color: #292929;
     margin-top: 50px;
     
@@ -28,16 +27,27 @@ h1{
 .homescreen h1, .homescreen p{
     align-items: center;
 }
-.homescreen p{
+.homescreen p, .breakfast_heading p, .meals_heading p, .dessert_heading p {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 10%;
+    font-size: 25px;
+    font-weight:bold;
 }
+.food li{
+    font-size: 50px;
+    font-weight: bold;
+}
+.homescreen h1, .food h1, .breakfast_heading h1, .meals_heading h1, .dessert_heading h1{
+    font-size: 65px;
 
+}
 h2{
-    font-size: 22px;
+    font-size: 25px;
     padding: 5px;
     margin: 10px;
+    font-weight: bolder;
+    color: rgb(0, 48, 68);
 }
 h3{
     font-size: 20px;
@@ -52,7 +62,12 @@ p{
 .flex_gallery{
     display: flex;
     flex-direction: column;
-    margin: 10%;
+    /*margin: 10%;*/
+    text-align: center;
+    padding: 5%;
+    /*height: 100vh;*/
+    background-color: rgb(0, 48, 68);
+    justify-content: center;
 }
 .flex_gallery img{
     width: 50%;
@@ -101,20 +116,15 @@ a{
 
 }
 .food{
-    height: 10vh;
+    height: 100vh;
+    text-align: center;
+    background-image: url("../images/food_background.jpg"); 
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-
-/*
-#nav__checkbox:checked ~ label.nav__toggle.fa-xmark{
-    display: block;
-}
-#nav__checkbox:checked ~ label.nav__toggle.fa-bars{
-    display: none;
-}*/
-
-
-
 
 
 
@@ -122,6 +132,7 @@ a{
     font-size: 20px;
     font-weight: bold;
     border: 2px solid blueviolet;
+    background-color: rgb(213, 187, 236);
 }
 
 a:hover{
@@ -136,38 +147,31 @@ a:hover{
     top: 0px;
 }
 
+
+
 .grid_container img, .felx_gallery img {
     margin: 0px;
     padding: 5px;
-    filter: grayscale(60%);
-    width: 200px;
-    height:200px;
+    width: 100%;
+    height: 300px;
     overflow: hidden;
 }
 .grid_container img:hover, .flex_gallery img:hover{
-    filter: grayscale(0%);
+    filter: grayscale(90%);
     background-color: rgb(196, 185, 202);
 }
 
-
 .grid_container{
-     display: grid;
+    display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr ;
+    background-color: #f5c29e;
+    padding: 7%;
  }
-.grid_container img {
-    border-radius: 7%;
-}
-/*
-.lifestyle{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.lifestyle img {
-    justify-self: center;
-    width: 200px;
-    overflow: hidden;
-}*/
+
+
+
+
 .homescreen{
     height: 100vh;
     background-image: url("../images/autum-salad-transp.jpg"); 
@@ -179,7 +183,10 @@ a:hover{
 }
 ol{
     display: fixed;
-    margin: 10px
+    margin: 10px;
+    font-size: 20px;
+    text-align: initial;
+    padding: 5%;
 }
 .bigger{
     font-size: 40px;
@@ -206,6 +213,10 @@ ol{
 }
 .radioButtons{
     display: flex;
+    justify-content: center;
+}
+a:hover{
+    border: dashed 2px black;
 }
 /*
 form{
@@ -228,7 +239,7 @@ input, textarea {
   .breakfast_heading{
       height: 100vh;
       text-align: center;
-      background-image: url("../images/Avocado-Toast-vert-tranp.jpg");
+      background-image: url("../images/avo_background.jpg");
       background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,7 +248,7 @@ input, textarea {
   .meals_heading{
     height: 100vh;
     text-align: center;
-    background-image: url("../images/salmon_transparent.jpg");
+    background-image: url("../images/aaa_salmon.jpg");
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -252,6 +263,84 @@ input, textarea {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* The flip card container - set the width and height 
+to whatever you want. We have added the border property
+ to demonstrate that the flip itself goes out of the 
+ box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    width: 500px;
+    height: 600px;
+
+    perspective: 1000px; 
+    margin: 5%;
+    
+    
+  }
+.flip_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5c29e;
+}
+.flip_img{
+    width: 500px;
+    height: 600px;
+
+}
+
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(0, 48, 68);
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+  .flip_text{
+      font-size: 40px;
+  }
+  .aboutkatie{
+      padding-top: 10%;
+      font-size: 60px;
+  }
+
+  .mealscontent, .brekieContent, .dessertContent{
+    display: grid;
+    grid-template-columns: 1fr;
+      text-align: center;
+  }
+ 
 
 @keyframes katiesKitchen {
     from {
@@ -275,10 +364,19 @@ input, textarea {
    #main{
        animation: none;
    }
+   .flip-card:hover .flip-card-inner{
+       transform: none;
+   }
+   .flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg)                      
+    }
+    .breakfast_heading, .meals_heading, .dessert_heading, .food, .homescreen{
+        background-attachment: initial;
+    }
   }
 
 
-  @media only screen and (min-width:560px){
+  @media only screen and (min-width:650px){
     .nav__toggle{
         display: none;
     }
@@ -289,4 +387,120 @@ input, textarea {
     .nav__menu li{
         display: block;
     }
+    .radioButtons{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .button1{
+        display: inline-block;
+    }
+    .grid_container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid_container img{
+        align-items: center;
+    }
+    .brekieContent, .mealscontent, .dessertContent{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .flex_gallery{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    a img.first{
+        grid-column: 2/3;
+    }
+   
+    .flex_gallery img{
+        width: 220px;
+        height: 220px;
+    }
+    .aa, .ba, .ca{
+        width: 100%;
+        height: 100%;
+    }
+    .aa img, .ba img, .ca img{
+        width: 100%;
+        height: 100%;
+    }
+    .links_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10%;
+        text-align: center;
+    }
+    .linkb{
+        grid-column: 3/4;
+    }
+    .linkc{
+        grid-column: 2/3;
+    }
+    .linkd{
+        grid-column: 1/2;
+    }
+    .linke{
+        grid-column: 3/4;
+    }
+    .linkf{
+        grid-column: 2/3;
+    }
+    .linkg{
+        grid-column: 1/2;
+    }
+    .linkh{
+        grid-column: 3/4;
+    }
+    .linki{
+        grid-column: 2/3;
+    }
+    .links_grid li a{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width:1000px){
+    .grid_container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    .linkb{
+        grid-column: 2/3;
+    }
+    .linkc{
+        grid-column: 3/4;
+    }
+    .linkd{
+        grid-column: 2/3;
+    }
+    .linke{
+        grid-column: 3/4;
+    }
+    .linkf{
+        grid-column: 4/5;
+    }
+    .linkg{
+        grid-column: 1/2;
+    }
+    .linkh{
+        grid-column: 2/3;
+    }
+    .linki{
+        grid-column: 3/4;
+    }
+    .flex_gallery{
+        justify-content: space-between;
+    }
+    .nav__menu{
+        justify-content: space-around;
+    }
+    .brekieContent, .mealscontent, .dessertContent{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .aa, .ba, .ca{
+        height: 50%;
+    }
+    
 }

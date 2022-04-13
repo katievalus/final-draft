@@ -31,8 +31,10 @@
     <header>
             <a class = "skip" href="#main">Skip to Main Content</a>
             <nav class = 'nav'>
+                
                 <input type = 'checkbox' id='nav__checkbox' class = "nav__checkbox">
                 <label  for = 'nav__checkbox' class='nav__toggle'>
+                     nav
                     <i  class="fa-solid fa-bars"></i>
                     <i  class="fa-solid fa-xmark"></i>
                 </label>
@@ -52,7 +54,7 @@
     <div class = homescreen>
         <h1 class = "bigger" id = "main"> Katie's Kitchen</h1>
         <p class = main_blurb>
-            Hi! My name is Katie Valus. Welcome to my food blog! I am excited to share with you my favorite recepies and more about my lifestyle! 
+            Welcome to my food blog! I am excited to share with you my favorite recepies and more about my lifestyle! 
             I love delicious foods that are high in protein and make my body feel good, full, and fueld. Many of my recepies are gluten and dairy free.
             I hope you enjoy them as much as I do!
         </p>
@@ -74,16 +76,19 @@
 
         <label for="name">Name</label>
         <input id = "name" type="text" name="name" placeholder="Enter your name here" >
-        <div class = 'radioRuttons'>
-        <input type = 'radio' id = 'messagerecipie' name = 'type'>
-        <label for = "messagerecipie">Recepie</label>
-
-        <input type = 'radio' id = 'business' name = 'type'>
-        <label for = "business">Business</label>
-
-        <input type = 'radio' id = 'Other' name = 'type'>
-        <label for = "Other">Other</label>
-
+        <div class = 'radioButtons'>
+            <div class = 'button1'>
+                <input type = 'radio' id = 'messagerecipie' name = 'type'>
+                <label for = "messagerecipie">Recepie</label>
+            </div>
+            <div  class = 'button2'>        
+                <input       type = 'radio' id = 'business' name = 'type'>
+                <label for = "business">Business</label>
+            </div>
+            <div class = 'button3'>
+                <input  type = 'radio' id = 'Other' name = 'type'>
+                <label for = "Other">Other</label>
+            </div>
         </div>
         <button type="submit">Send</button>
   
@@ -92,48 +97,32 @@
 
 
     <div class = "grid_container" >
-        <img src = "images/brownies.jpg" alt = "lack bean brownies" />
-        <img src = "images/chicago-salad.jpg" alt = "green salad with chicken" />
-        <img src = "images/psmoothie.jpg" alt = "purple smoothie" />
-        <img src = "images/whitebean.jpg" alt = "white bean dip" />
-        <img src = "images/gsmoothie.jpg" alt = "green smoothie" />
-        <img src = "images/omlet.jpg" alt = "omlet with veggies" />
-        <img src = "images/cod.jpg" alt = "cod prepared with veggies" />
-        <img src = "images/cake.jpg" alt = "chocolate cake" />
-        <img src = "images/strawberries.jpg" alt = "chocolate covered strawberries" />
+        <a class = linka href="dessert.html"> <img class = first src = "images/brownies.jpg" alt = "Black bean brownies" /></a> 
+        <a class = linkb href = "meals.html"> <img  class = second src = "images/chicago-salad.jpg" alt = "green salad with chicken" /> </a>
+        <a class = linkc href="breakfast.html"> <img class = third src = "images/psmoothie.jpg" alt = "purple smoothie" /></a>
+        <a class = linkd href = "meals.html"><img class = fourth src = "images/whitebean.jpg" alt = "white bean dip" /> </a>
+        <a class = linke href="breakfast.html"> <img class = fifth src = "images/gsmoothie.jpg" alt = "green smoothie" /></a>
+        <a class = linkf href="breakfast.html"> <img class = sixth src = "images/omlet.jpg" alt = "omlet with veggies" /></a>
+        <a class = linkg href="meals.html"> <img class = seventh src = "images/cod.jpg" alt = "cod prepared with veggies" /></a>
+        <a class = linkh href="dessert.html"> <img class = eighth src = "images/cake.jpg" alt = "chocolate cake" /></a>
+        <a class = linki href="dessert.html"><img class = ninth src = "images/strawberries.jpg" alt = "chocolate covered strawberries" /></a>
     </div>
-
-
-    
-
-<!--
-
-    <div class = contact>
-        <form>
-            <fieldset>
-              <legend>Contact Me!</legend>
-          
-              <label for="name_id">Your Name</label>
-              <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
-          
-              <label for="email_id">Your Email</label>
-              <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
-          
-              <label for="phone_id">Your Phone Number</label>
-              <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-              
-          
-          
-              <label for="msg">Leave A Message</label>
-              <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
-          
-              <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
-              <label for ="cBox">Remember me</label>
-          
-              <input class = contactme type="submit" value = "Contact Me">
-            </fieldset>
-           </form>
-    </div> -->
+    <div class = flip_flex>
+    <div tabindex="0" class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class = flip_img src="images/flip_card.jpg" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h1 class = aboutkatie>ABOUT KATIE</h1>
+            <p class= flip_text >Hi, I'm Katie! I am a sophomore at the University of Michigan
+                studying Information. I have always had a passion for health and wellness
+                and am excited to share some of my favorite recepies with you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 </main>
 	<footer>
 		<p>Katie Valus &copy; 2022</p>
